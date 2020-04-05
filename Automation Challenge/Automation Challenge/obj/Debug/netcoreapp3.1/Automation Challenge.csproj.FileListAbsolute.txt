@@ -87,3 +87,13 @@ C:\Users\Christopher Aguilar\Desktop\Automation Challenge\Automation Challenge\A
 C:\Users\Christopher Aguilar\Desktop\Automation Challenge\Automation Challenge\Automation Challenge\bin\Debug\netcoreapp3.1\zh-Hant\Microsoft.TestPlatform.CommunicationUtilities.resources.dll
 C:\Users\Christopher Aguilar\Desktop\Automation Challenge\Automation Challenge\Automation Challenge\bin\Debug\netcoreapp3.1\zh-Hant\Microsoft.TestPlatform.CrossPlatEngine.resources.dll
 C:\Users\Christopher Aguilar\Desktop\Automation Challenge\Automation Challenge\Automation Challenge\bin\Debug\netcoreapp3.1\zh-Hant\Microsoft.VisualStudio.TestPlatform.Common.resources.dll
+C:\Users\Christopher Aguilar\Desktop\Automation Challenge\Automation Challenge\Automation Challenge\obj\Debug\netcoreapp3.1\Automation Challenge.csproj.CoreCompileInputs.cache
+C:\Users\Christopher Aguilar\Desktop\Automation Challenge\Automation Challenge\Automation Challenge\bin\Debug\netcoreapp3.1\Automation Challenge.deps.json
+C:\Users\Christopher Aguilar\Desktop\Automation Challenge\Automation Challenge\Automation Challenge\bin\Debug\netcoreapp3.1\Automation Challenge.runtimeconfig.json
+C:\Users\Christopher Aguilar\Desktop\Automation Challenge\Automation Challenge\Automation Challenge\bin\Debug\netcoreapp3.1\Automation Challenge.runtimeconfig.dev.json
+C:\Users\Christopher Aguilar\Desktop\Automation Challenge\Automation Challenge\Automation Challenge\bin\Debug\netcoreapp3.1\Automation Challenge.dll
+C:\Users\Christopher Aguilar\Desktop\Automation Challenge\Automation Challenge\Automation Challenge\bin\Debug\netcoreapp3.1\Automation Challenge.pdb
+C:\Users\Christopher Aguilar\Desktop\Automation Challenge\Automation Challenge\Automation Challenge\bin\Debug\netcoreapp3.1\WebDriver.Support.dll
+C:\Users\Christopher Aguilar\Desktop\Automation Challenge\Automation Challenge\Automation Challenge\obj\Debug\netcoreapp3.1\Automation Challenge.dll
+C:\Users\Christopher Aguilar\Desktop\Automation Challenge\Automation Challenge\Automation Challenge\obj\Debug\netcoreapp3.1\Automation Challenge.pdb
+C:\Users\Christopher Aguilar\Desktop\Automation Challenge\Automation Challenge\Automation Challenge\obj\Debug\netcoreapp3.1\Automation Challenge.genruntimeconfig.cache
