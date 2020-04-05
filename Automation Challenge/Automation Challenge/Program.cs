@@ -54,6 +54,24 @@ namespace Automation_Challenge
             IWebElement ClickSummit = driver.FindElement(By.Name("Submit"));
             ClickSummit.Click();
 
+            /*
+             Valet Parking parameters
+             $18 per day
+             $12 for five hours or less
+            
+            We are looking for 1 day and 4 hours, the result should be $30
+
+             */
+            IWebElement ActualResults = driver.FindElement(By.XPath("/html/body/form/table/tbody/tr[4]/td[2]/span[1]/b"));
+            var GivenResults = ActualResults.Text;
+            var ExpectedResults = "$ 30.00";
+            Assert.AreEqual(GivenResults, ExpectedResults);
+
+        }
+
+        public void InitializeShortTerm()
+        {
+
         }
     }
 }
