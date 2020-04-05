@@ -18,7 +18,7 @@ namespace Automation_Challenge
             driver.Navigate().GoToUrl("http://www.shino.de/parkcalc/");
         }
 
-        
+
         [Test]
         public void ExecuteTest()
         {
@@ -70,7 +70,7 @@ namespace Automation_Challenge
             Assert.AreEqual(GivenResults, ExpectedResults);
 
         }
-        
+
 
         [Test]
         public void InitializeShortTerm()
@@ -123,7 +123,7 @@ namespace Automation_Challenge
             var GivenResults = ActualResults.Text;
             var ExpectedResults = "$ 20.00";
             Assert.AreEqual(GivenResults, ExpectedResults);
-           
+
         }
 
 
@@ -168,6 +168,42 @@ namespace Automation_Challenge
             IWebElement ActualResults = driver.FindElement(By.XPath("/html/body/form/table/tbody/tr[4]/td[2]/span[1]/b"));
             var GivenResults = ActualResults.Text;
             var ExpectedResults = "ERROR! Your Leaving Date Or Time Is Before Your Starting Date or Time";
+            Assert.AreEqual(GivenResults, ExpectedResults);
+
+        }
+
+
+        [Test]
+        public void HoursOfCalculator()
+        {
+
+            // Select Parking Lot
+            IWebElement ParkingLotSelector = driver.FindElement(By.Id("ParkingLot"));
+            var SelectParking = new SelectElement(ParkingLotSelector);
+            SelectParking.SelectByValue("Short");
+
+            //Entry Date
+            IWebElement EntryDate = driver.FindElement(By.Id("StartingDate"));
+            EntryDate.Clear();
+            EntryDate.SendKeys("4/5/2020");
+
+            //Entry Time
+            IWebElement EntryTime = driver.FindElement(By.Id("StartingTime"));
+            EntryTime.Clear();
+            EntryTime.SendKeys("11:00");
+
+            //Select PM shift
+            IWebElement PmTime = driver.FindElement(By.Name("LeavingTimeAMPM"));
+            PmTime.Click();
+
+            //Click Summit
+            IWebElement ClickSummit = driver.FindElement(By.Name("Submit"));
+            ClickSummit.Click();
+
+            // Assert
+            IWebElement ActualResults = driver.FindElement(By.Id("LeavingTime"));
+            var GivenResults = ActualResults.Text;
+            var ExpectedResults = "11:00";
             Assert.AreEqual(GivenResults, ExpectedResults);
 
         }
