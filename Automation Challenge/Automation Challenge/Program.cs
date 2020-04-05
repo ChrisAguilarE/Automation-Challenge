@@ -159,6 +159,17 @@ namespace Automation_Challenge
             IWebElement ClickSummit = driver.FindElement(By.Name("Submit"));
             ClickSummit.Click();
 
+            /*
+             Assert
+
+            Ramdon information should display and error message and not a value   
+             */
+
+            IWebElement ActualResults = driver.FindElement(By.XPath("/html/body/form/table/tbody/tr[4]/td[2]/span[1]/b"));
+            var GivenResults = ActualResults.Text;
+            var ExpectedResults = "ERROR! Your Leaving Date Or Time Is Before Your Starting Date or Time";
+            Assert.AreEqual(GivenResults, ExpectedResults);
+
         }
     }
 }
