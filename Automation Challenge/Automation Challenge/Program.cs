@@ -190,10 +190,20 @@ namespace Automation_Challenge
             //Entry Time
             IWebElement EntryTime = driver.FindElement(By.Id("StartingTime"));
             EntryTime.Clear();
-            EntryTime.SendKeys("11:00");
+            EntryTime.SendKeys("12:00");
+
+            //Leaving Date
+            IWebElement LeavingDate = driver.FindElement(By.Id("LeavingDate"));
+            LeavingDate.Clear();
+            LeavingDate.SendKeys("4/6/2020");
+
+            //Leaving Time
+            IWebElement LeavingTime = driver.FindElement(By.Id("LeavingTime"));
+            LeavingTime.Clear();
+            LeavingTime.SendKeys("11:00");
 
             //Select PM shift
-            IWebElement PmTime = driver.FindElement(By.Name("LeavingTimeAMPM"));
+            IWebElement PmTime = driver.FindElement(By.XPath("LeavingTimePM"));
             PmTime.Click();
 
             //Click Summit
