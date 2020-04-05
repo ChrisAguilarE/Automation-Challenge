@@ -76,25 +76,25 @@ namespace Automation_Challenge
         public void InitializeShortTerm()
         {
 
-            // Select Long-Term Surface Parking
+            // Select Long Term Surface Parking
             IWebElement ParkingLotSelector = driver.FindElement(By.Id("ParkingLot"));
             var SelectParkingLot = new SelectElement(ParkingLotSelector);
             SelectParkingLot.SelectByValue("Long-Surface");
 
-            //Entry Date
+            // Entry Date
             IWebElement EntryDate = driver.FindElement(By.Id("StartingDate"));
             EntryDate.Clear();
-            EntryDate.SendKeys("4/5/2020");
+            EntryDate.SendKeys("4/5/20");
 
-            //Entry Time
-            IWebElement EntryTime = driver.FindElement(By.Id("StartingDate"));
+            // Entry Time
+            IWebElement EntryTime = driver.FindElement(By.Id("StartingTime"));
             EntryTime.Clear();
             EntryTime.SendKeys("12:00");
 
             //Leaving Date
             IWebElement LeavingDate = driver.FindElement(By.Id("LeavingDate"));
             LeavingDate.Clear();
-            LeavingDate.SendKeys("4/6/2020");
+            LeavingDate.SendKeys("4/6/20");
 
             //Leaving Time
             IWebElement LeavingTime = driver.FindElement(By.Id("LeavingTime"));
@@ -104,6 +104,7 @@ namespace Automation_Challenge
             //Click Summit
             IWebElement ClickSummit = driver.FindElement(By.Name("Submit"));
             ClickSummit.Click();
+
 
             /*
              Assert
