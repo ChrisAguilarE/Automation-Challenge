@@ -124,6 +124,40 @@ namespace Automation_Challenge
             var ExpectedResults = "$ 20.00";
             Assert.AreEqual(GivenResults, ExpectedResults);
            
+        }
+
+
+        [Test]
+        public void InitializeDataEntry()
+        {
+            // I am testing if we can enter random inforamtion and see what happen
+            IWebElement ParkingLotSelector = driver.FindElement(By.Id("ParkingLot"));
+            var LotSelector = new SelectElement(ParkingLotSelector);
+            LotSelector.SelectByValue("Valet");
+
+            // Entry Date
+            IWebElement EntryDate = driver.FindElement(By.Id("StartingDate"));
+            EntryDate.Clear();
+            EntryDate.SendKeys("adfsdfsdf");
+
+            //Entry Time
+            IWebElement EntryTime = driver.FindElement(By.Id("StartingTime"));
+            EntryTime.Clear();
+            EntryTime.SendKeys("adfsdfsdf");
+
+            //Leaving Date
+            IWebElement LeavingDate = driver.FindElement(By.Id("LeavingDate"));
+            LeavingDate.Clear();
+            LeavingDate.SendKeys("adfsdfsdf");
+
+            //Leaving Time
+            IWebElement LeavingTime = driver.FindElement(By.Id("LeavingTime"));
+            LeavingTime.Clear();
+            LeavingTime.SendKeys("adfsdfsdf");
+
+            //Click Summit
+            IWebElement ClickSummit = driver.FindElement(By.Name("Submit"));
+            ClickSummit.Click();
 
         }
     }
