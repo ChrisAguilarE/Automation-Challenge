@@ -162,7 +162,7 @@ namespace Automation_Challenge
             /*
              Assert
 
-            Ramdon information should display and error message and not a value   
+            Ramdon information should display and error message and not a value.
              */
 
             IWebElement ActualResults = driver.FindElement(By.XPath("/html/body/form/table/tbody/tr[4]/td[2]/span[1]/b"));
